@@ -7,11 +7,20 @@
         <title>CSS Flrower Animation</title>
         <style>
             .parent{
-                width: 500px;
-                height: 500px;
-                background-color: pink;
-                margin: 100px auto;
+                width: 400px;
+                height: 400px;
+                background-color:#fff;
+                margin: 200px auto;
                 position:relative;
+                animation: floweranimation 10s linear 0s infinite;
+            }
+            @keyframes floweranimation{
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(359deg);
+                }
             }
             .parent > div{
                 position: absolute;
@@ -19,10 +28,10 @@
                 right: 0px;
             }
             .comman{
-                width: 250px;
-                height: 250px;
-                border-bottom-left-radius:250px;
-                border-top-right-radius:250px;
+                width: 200px;
+                height: 200px;
+                border-bottom-left-radius:200px;
+                border-top-right-radius:200px;
                 opacity: 0.5;
                 transform-origin: right bottom;
             }
